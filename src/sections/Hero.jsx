@@ -42,7 +42,7 @@ const Hero = () => {
           alt="shoe_collection"
           width={610}
           height={500}
-          className="object-contain relative z-10"
+          className="object-contain relative z-5"
         />
         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] mx-sm:px-6">
           {shoes.map((shoe) => (
