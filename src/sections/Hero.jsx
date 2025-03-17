@@ -8,7 +8,10 @@ import { useState } from "react";
 const Hero = () => {
   const [bigShoeImage, setBigShoeImage] = useState(bigShoe1);
   return (
-    <section className="flex w-full flex-col xl:flex-row min-h-screen max-container justify-center gap-10">
+    <section
+      id="home"
+      className="flex w-full flex-col xl:flex-row min-h-screen max-container justify-center gap-10"
+    >
       <div className="relative xl:w-2/5 flex justify-center items-start flex-col w-full max-lg:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer Collection
@@ -44,7 +47,7 @@ const Hero = () => {
           height={500}
           className="object-contain relative z-5"
         />
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] mx-sm:px-6">
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[10%] sm:left-[10%] mx-sm:px-6">
           {shoes.map((shoe) => (
             <div key={shoe.bigShoe}>
               <ShoeCard
